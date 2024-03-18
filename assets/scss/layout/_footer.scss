@@ -1,0 +1,18 @@
+.l-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+
+    .l-footer__inner {
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #333;
+        padding-top: 20px;
+    }
+
+    .l-footer__copy-text {
+        font-size: 14px;
+    }
+}
