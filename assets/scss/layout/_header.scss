@@ -1,6 +1,9 @@
 .l-header {
     position: fixed;
     width: 100%;
+    background-color: white;
+    // border-bottom: 1px solid black;
+    z-index: 1000;
 
     .l-header__inner {
         display: flex;

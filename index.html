@@ -9,8 +9,15 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/icon/icon.png"
+      sizes="192x192"
+    />
     <link rel="stylesheet" href="/assets/scss/style.css" />
-    <title>Document</title>
+    <title>My Portfolio</title>
   </head>
   <body>
     <header class="l-header">
@@ -31,7 +38,191 @@
       <!-- .l-header__inner -->
     </header>
 
-    <main></main>
+    <main class="l-main p-index">
+      <div class="p-index-header">
+        <figure>
+          <img src="https://s3-alpha-sig.figma.com/img/73f0/10d1/8ca5fa7d4cab6751bfeb6321f47016e5?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RTkz6KTzZpoZsYNHQ65ADbIVDI79b99MNZ5i6aR2fJ4n2hrNiG~Dyk7jO9fqKKCBR6J7HhG6kQC315N5W~BYdx47cMlcyGq2VD-y0RHhtfOOrzAXHgYIp3VVKoYFz8rnda2VHzL38DcJy3AD2tFGvZAn7Jri07zKLnufjm2ksOKSZweWMlZ6fBVnJ0HrdQVJiPQzZIn6n-TCl2K0hfNk-iDl317fBvrlExN1y8~906Sgz0snICsi7Cw4yj7ijqaAJBiBOYSmlA2oJhPaCByblOQuVF1mJElK0oy-~JhzZPiA5LY-kK6~cPB1SnGVcCgSza720hOW-HyaQutf7IgqFw__" />
+        </figure>
+      </div>
+
+      <section class="l-section p-index-about">
+        <div class="c-mainTitle">
+          <h2 class="c-mainTitle__text">About</h2>
+        </div>
+        <!-- .c-mainTitle -->
+
+        <div class="p-index-about__profile">
+          <figure class="p-index-about__profile-img-wrap">
+            <img
+              class="p-index-about__profile-img"
+              src="/assets/img/images/profile.jpg"
+            />
+          </figure>
+          <div class="p-index-about__profile-text">
+            <p>
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            </p>
+            <p>
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            </p>
+            <p>
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            </p>
+          </div>
+          <!-- .p-index-about__profile-text -->
+        </div>
+        <!-- .p-index-about__profile -->
+        <figure class="p-index-about__icons">
+          <a href="https://github.com/kobarihirono" target="_blank"
+            ><img class="c-socialIcon" src="/assets/img/icon/Github.png"
+          /></a>
+          <a href="https://qiita.com/kobari_h" target="_blank"
+            ><img class="c-socialIcon" src="/assets/img/icon/Qiita.png"
+          /></a>
+        </figure>
+      </section>
+
+      <section class="l-section p-index-skills">
+        <div class="c-mainTitle">
+          <h2 class="c-mainTitle__text">Skills</h2>
+        </div>
+
+        <p class="p-index-skills__text">
+          主にフロントエンドを学習しています。<br />
+          以下は現在勉強中、あるいは実務で使用したことのある技術一覧です。
+        </p>
+
+        <div class="p-index-skills__cards">
+          <!-- .c-mainTitle -->
+          <div class="c-skillCard">
+            <p class="c-skillCard__title">HTML</p>
+            <figure class="c-skillCard__img-wrap">
+              <img class="c-skillCard__img" src="/assets/img/icon/html.png" />
+            </figure>
+          </div>
+          <!-- .c-skillCard -->
+          <div class="c-skillCard">
+            <p class="c-skillCard__title">CSS</p>
+            <figure class="c-skillCard__img-wrap">
+              <img class="c-skillCard__img" src="/assets/img/icon/css.png" />
+            </figure>
+          </div>
+          <!-- .c-skillCard -->
+          <div class="c-skillCard">
+            <p class="c-skillCard__title">Javascript</p>
+            <figure class="c-skillCard__img-wrap">
+              <img
+                class="c-skillCard__img"
+                src="/assets/img/icon/javascript.png"
+              />
+            </figure>
+          </div>
+          <!-- .c-skillCard -->
+          <div class="c-skillCard">
+            <p class="c-skillCard__title">jQuery</p>
+            <figure class="c-skillCard__img-wrap">
+              <img class="c-skillCard__img" src="/assets/img/icon/jquery.png" />
+            </figure>
+          </div>
+          <!-- .c-skillCard -->
+          <div class="c-skillCard">
+            <p class="c-skillCard__title">Typescript</p>
+            <figure class="c-skillCard__img-wrap">
+              <img
+                class="c-skillCard__img"
+                src="/assets/img/icon/typescript.png"
+              />
+            </figure>
+          </div>
+          <!-- .c-skillCard -->
+          <div class="c-skillCard">
+            <p class="c-skillCard__title">React</p>
+            <figure class="c-skillCard__img-wrap">
+              <img class="c-skillCard__img" src="/assets/img/icon/react.png" />
+            </figure>
+          </div>
+          <!-- .c-skillCard -->
+          <div class="c-skillCard">
+            <p class="c-skillCard__title">WordPress</p>
+            <figure class="c-skillCard__img-wrap">
+              <img
+                class="c-skillCard__img"
+                src="/assets/img/icon/wordpress.png"
+              />
+            </figure>
+          </div>
+          <!-- .c-skillCard -->
+          <div class="c-skillCard">
+            <p class="c-skillCard__title">PHP</p>
+            <figure class="c-skillCard__img-wrap">
+              <img class="c-skillCard__img" src="/assets/img/icon/php.png" />
+            </figure>
+          </div>
+          <!-- .c-skillCard -->
+        </div>
+        <!-- .p-index-skills__cards -->
+      </section>
+
+      <section class="l-section p-index-products">
+        <div class="c-mainTitle">
+          <h2 class="c-mainTitle__text">Products</h2>
+        </div>
+
+        <div class="p-index-products__cards">
+          <div class="c-productCard">
+            <a href="#" class="c-productCard__link">
+              <figure class="c-productCard__img-wrap">
+                <img
+                  class="c-productCard__img"
+                  src="/assets/img/images/productComming.png"
+                />
+              </figure>
+              <div class="c-productCard__context">
+                <p class="c-productCard__context-title">
+                  架空のコーポレートサイト
+                </p>
+                <p class="c-productCard__context-skill">
+                  使用技術 : HTML,SCSS,jQuery,PHP
+                </p>
+              </div>
+              <!-- .c-productCard__context -->
+            </a>
+          </div>
+          <!-- .c-productCard -->
+          <div class="c-productCard">
+            <a href="#" class="c-productCard__link">
+              <figure class="c-productCard__img-wrap">
+                <img
+                  class="c-productCard__img"
+                  src="/assets/img/images/productComming.png"
+                />
+              </figure>
+              <div class="c-productCard__context">
+                <p class="c-productCard__context-title">タイトル</p>
+                <p class="c-productCard__context-skill">技術スタック一覧</p>
+              </div>
+              <!-- .c-productCard__context -->
+            </a>
+          </div>
+          <!-- .c-productCard -->
+        </div>
+        <!-- .p-index-products__cards -->
+      </section>
+
+      <section class="l-section p-index-contact">
+        <div class="c-mainTitle">
+          <h2 class="c-mainTitle__text">Contact</h2>
+        </div>
+        <div class="p-index-contact__context">
+          <p>
+            お問い合わせは以下のメールアドレスまでご連絡をお願いいたします。
+          </p>
+          <p class="p-index-contact__context-mail">
+            mail: k.hirono0127@gmail.com
+          </p>
+        </div>
+      </section>
+    </main>
 
     <footer class="l-footer">
       <div class="l-footer__inner">
