@@ -1,0 +1,23 @@
+.c-productCard {
+    width: 33%;
+
+    .c-productCard__link {
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .c-productCard__img {
+        object-fit: cover;
+    }
+
+    .c-productCard__context {
+        margin-top: 10px;
+
+        .c-productCard__context-skill {
+            margin-top: 8px;
+        }
+    }
+}
