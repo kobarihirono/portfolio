@@ -1,0 +1,20 @@
+.c-skillCard {
+    width: 140px;
+    padding: 20px;
+
+    .c-skillCard__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .c-skillCard__img-wrap {
+        padding-top: 10px;
+    }
+
+    .c-skillCard__img {
+        width: 100px;
+        height: 100px;
+    }
+}
