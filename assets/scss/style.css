@@ -561,6 +561,11 @@ button {
 .c-productCard .c-productCard__img {
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 380/250;
+}
+.c-productCard .c-productCard__img img {
+  width: 100%;
+  height: 100%;
 }
 .c-productCard .c-productCard__context {
   margin-top: 10px;
