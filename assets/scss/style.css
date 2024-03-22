@@ -397,6 +397,11 @@ th {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -404,7 +409,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: #333;
+  color: #333333;
   margin: 0;
   padding: 0;
   position: relative;
@@ -450,7 +455,7 @@ button {
 .l-footer .l-footer__inner {
   display: flex;
   justify-content: center;
-  border-top: 1px solid #333;
+  border-top: 1px solid #333333;
   padding-top: 20px;
 }
 .l-footer .l-footer__copy-text {
@@ -460,29 +465,39 @@ button {
 .l-header {
   position: fixed;
   width: 100%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   z-index: 1000;
 }
 .l-header .l-header__inner {
   display: flex;
   justify-content: space-between;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 4%;
+  padding-left: 4%;
 }
 .l-header .l-header__logo {
   width: 280px;
-  height: 100px;
-  background-color: wheat;
+  height: 80px;
+  background-color: #CCCCCC;
 }
 .l-header .l-header__nav {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: bold;
   line-height: 24px;
 }
 .l-header .l-header__nav .l-header__nav-list {
   display: flex;
   gap: 40px;
+}
+.l-header .l-header__nav .l-header__nav-list .l-header__nav-list-item {
+  cursor: pointer;
+}
+
+.l-body {
+  background-image: url("/assets/img/images/bg.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .l-main {
@@ -493,6 +508,16 @@ button {
   margin-top: 120px;
   padding-left: 7%;
   padding-right: 7%;
+}
+
+.c-button {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  background-color: #20b2aa;
+  color: #FFFFFF;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .c-mainTitle .c-mainTitle__text {
@@ -596,4 +621,56 @@ button {
 .p-index .p-index-contact .p-index-contact__context {
   margin-top: 36px;
   line-height: 36px;
+}
+
+.p-form {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 36px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 36px;
+}
+.p-form input[type=email],
+.p-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+}
+.p-form .p-form__name {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+}
+.p-form .p-form__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.p-form p {
+  margin-top: 12px;
+}
+.p-form span {
+  color: #dc143c;
+  margin-right: 2px;
+}
+
+.p-completed {
+  width: 78%;
+  margin: auto;
+  padding-top: 120px;
+}
+.p-completed .p-completed__title {
+  font-size: 48px;
+  font-weight: bold;
+}
+.p-completed .p-completed__text {
+  margin-top: 24px;
+}
+.p-completed .p-completed__button {
+  margin-top: 24px;
 }/*# sourceMappingURL=style.css.map */

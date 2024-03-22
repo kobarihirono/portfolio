@@ -1,0 +1,11 @@
+@use "../foundation/color" as cl;
+
+.c-button {
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: cl.$c-mainButton;
+    color: cl.$c-mainBackground;
+    border-radius: 30px;
+    cursor: pointer;
+}
