@@ -1,10 +1,16 @@
 // bodyやmain周りのスタイリング
+.l-body {
+    background-image: url("/assets/img/images/bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .l-main {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .l-section {
-    margin-top: 120px;
+    margin-top: 80px;
     padding-left: 7%;
     padding-right: 7%;
 }

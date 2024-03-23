@@ -19,19 +19,22 @@
     <link rel="stylesheet" href="/assets/scss/style.css" />
     <title>My Portfolio</title>
   </head>
-  <body>
+  <body class="l-body">
     <header class="l-header">
       <div class="l-header__inner">
-        <figure class="l-header__logo">
-          LOGO
-          <img src="" />
-        </figure>
+        <a href="/" class="l-header__logo">Portfolio</a>
         <nav class="l-header__nav">
           <ul class="l-header__nav-list">
-            <li><a>About</a></li>
-            <li><a>Skills</a></li>
-            <li><a>Products</a></li>
-            <li><a>Contact</a></li>
+            <li class="l-header__nav-list-item"><a href="#about">About</a></li>
+            <li class="l-header__nav-list-item">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="l-header__nav-list-item">
+              <a href="#products">Products</a>
+            </li>
+            <li class="l-header__nav-list-item">
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -40,12 +43,12 @@
 
     <main class="l-main p-index">
       <div class="p-index-header">
-        <figure>
-          <img src="https://s3-alpha-sig.figma.com/img/73f0/10d1/8ca5fa7d4cab6751bfeb6321f47016e5?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RTkz6KTzZpoZsYNHQ65ADbIVDI79b99MNZ5i6aR2fJ4n2hrNiG~Dyk7jO9fqKKCBR6J7HhG6kQC315N5W~BYdx47cMlcyGq2VD-y0RHhtfOOrzAXHgYIp3VVKoYFz8rnda2VHzL38DcJy3AD2tFGvZAn7Jri07zKLnufjm2ksOKSZweWMlZ6fBVnJ0HrdQVJiPQzZIn6n-TCl2K0hfNk-iDl317fBvrlExN1y8~906Sgz0snICsi7Cw4yj7ijqaAJBiBOYSmlA2oJhPaCByblOQuVF1mJElK0oy-~JhzZPiA5LY-kK6~cPB1SnGVcCgSza720hOW-HyaQutf7IgqFw__" />
+        <figure class="p-index-header__img">
+          <img src="/assets/img/images/header-bg.png" />
         </figure>
       </div>
 
-      <section class="l-section p-index-about">
+      <section id="about" class="l-section p-index-about">
         <div class="c-mainTitle">
           <h2 class="c-mainTitle__text">About</h2>
         </div>
@@ -59,14 +62,13 @@
             />
           </figure>
           <div class="p-index-about__profile-text">
+            <p>エンジニアを目指して勉強中の24歳です。</p>
             <p>
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              出身は福島県で、育ちは岩手県、大学時代は宮城県仙台市で過ごしました。新しいことを学ぶことが大好きで、常にわくわくできるものを探しています。
             </p>
             <p>
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-            </p>
-            <p>
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              趣味は書道と展覧会巡り、たくさん食べることです。特にラーメンが大好きで、休日は美術館とラーメン屋を巡ることが多いです。<br />
+              githubとQiitaアカウントあります。気になる方は右のアイコンからどうぞ！
             </p>
           </div>
           <!-- .p-index-about__profile-text -->
@@ -82,7 +84,7 @@
         </figure>
       </section>
 
-      <section class="l-section p-index-skills">
+      <section id="skills" class="l-section p-index-skills">
         <div class="c-mainTitle">
           <h2 class="c-mainTitle__text">Skills</h2>
         </div>
@@ -163,7 +165,7 @@
         <!-- .p-index-skills__cards -->
       </section>
 
-      <section class="l-section p-index-products">
+      <section id="products" class="l-section p-index-products">
         <div class="c-mainTitle">
           <h2 class="c-mainTitle__text">Products</h2>
         </div>
@@ -174,7 +176,7 @@
               <figure class="c-productCard__img-wrap">
                 <img
                   class="c-productCard__img"
-                  src="/assets/img/images/productComming.png"
+                  src="/assets/img/images/fictitious_hp.png"
                 />
               </figure>
               <div class="c-productCard__context">
@@ -182,7 +184,25 @@
                   架空のコーポレートサイト
                 </p>
                 <p class="c-productCard__context-skill">
-                  使用技術 : HTML,SCSS,jQuery,PHP
+                  使用技術 : HTML,SCSS,jQuery
+                </p>
+              </div>
+              <!-- .c-productCard__context -->
+            </a>
+          </div>
+          <!-- .c-productCard -->
+          <div class="c-productCard">
+            <a href="#" class="c-productCard__link">
+              <figure class="c-productCard__img-wrap">
+                <img
+                  class="c-productCard__img"
+                  src="/assets/img/images/threeJs.png"
+                />
+              </figure>
+              <div class="c-productCard__context">
+                <p class="c-productCard__context-title">Three.jsで遊ぼう</p>
+                <p class="c-productCard__context-skill">
+                  使用技術 : HTML,CSS,Javascript,Three.js
                 </p>
               </div>
               <!-- .c-productCard__context -->
@@ -198,8 +218,8 @@
                 />
               </figure>
               <div class="c-productCard__context">
-                <p class="c-productCard__context-title">タイトル</p>
-                <p class="c-productCard__context-skill">技術スタック一覧</p>
+                <p class="c-productCard__context-title">Coming soon...</p>
+                <p class="c-productCard__context-skill">使用技術 : ???</p>
               </div>
               <!-- .c-productCard__context -->
             </a>
@@ -209,13 +229,79 @@
         <!-- .p-index-products__cards -->
       </section>
 
-      <section class="l-section p-index-contact">
+      <section id="contact" class="l-section p-index-contact">
         <div class="c-mainTitle">
           <h2 class="c-mainTitle__text">Contact</h2>
         </div>
+
+        <form
+          action="https://ssl.form-mailer.jp/fm/service/Forms/confirm"
+          method="post"
+          class="p-form"
+          name="form1"
+          enctype="multipart/form-data"
+          accept-charset="UTF-8"
+        >
+          <input type="hidden" name="key" value="0c1e04d5816435" />
+
+          <p>お問い合わせの際にはフォームよりご連絡ください。</p>
+          <p><span>*</span>は必須項目です</p>
+
+          <!-- name -->
+          <p><span>*</span>名前</p>
+          <div class="p-form__names">
+            <p>
+              <input
+                class="p-form__name"
+                name="field_7131055_sei"
+                type="text"
+                placeholder="姓"
+              />
+              <input
+                class="p-form__name"
+                name="field_7131055_mei"
+                type="text"
+                placeholder="名"
+              />
+            </p>
+          </div>
+          <!-- email -->
+          <p><span>*</span>メールアドレス</p>
+          <p>
+            <input
+              name="field_7131056"
+              type="email"
+              size="30"
+              placeholder="info@example.com"
+            />
+          </p>
+
+          <!-- textarea -->
+          <p><span>*</span>お問い合わせ内容</p>
+          <p>
+            <textarea
+              name="field_7131065"
+              cols="30"
+              rows="5"
+              placeholder="お問い合わせ内容を入力してください"
+            ></textarea>
+          </p>
+
+          <p class="p-form__button">
+            <input
+              class="c-button"
+              name="submit"
+              type="submit"
+              value="送信する"
+            />
+          </p>
+
+          <input type="hidden" name="code" value="utf8" />
+        </form>
+
         <div class="p-index-contact__context">
           <p>
-            お問い合わせは以下のメールアドレスまでご連絡をお願いいたします。
+            お問い合わせフォームに不具合がある場合には、お手数ですが以下のメールアドレスまでご連絡をお願いいたします。
           </p>
           <p class="p-index-contact__context-mail">
             mail: k.hirono0127@gmail.com
@@ -223,10 +309,9 @@
         </div>
       </section>
     </main>
-
     <footer class="l-footer">
       <div class="l-footer__inner">
-        <p class="l-footer__copy-text">&copy; これはフッターです</p>
+        <p class="l-footer__copy-text">&copy; 2024 Portfolio by kobari</p>
       </div>
     </footer>
   </body>
