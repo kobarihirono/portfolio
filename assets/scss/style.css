@@ -409,7 +409,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: #333333;
+  color: #000000;
   margin: 0;
   padding: 0;
   position: relative;
@@ -455,7 +455,7 @@ button {
 .l-footer .l-footer__inner {
   display: flex;
   justify-content: center;
-  border-top: 1px solid #333333;
+  border-top: 1px solid #000000;
   padding-top: 20px;
 }
 .l-footer .l-footer__copy-text {
@@ -478,8 +478,13 @@ button {
   padding-left: 5%;
 }
 .l-header .l-header__logo {
-  font-size: 32px;
-  font-weight: bold;
+  aspect-ratio: 200/60;
+}
+.l-header .l-header__logo img {
+  width: 230px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .l-header .l-header__nav {
   display: flex;
@@ -506,7 +511,7 @@ button {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #CCCCCC;
+  background-color: #0B60B0;
   transform: scale(0, 1);
   transform-origin: right top;
   transition: transform 0.3s ease;
@@ -517,9 +522,7 @@ button {
 }
 
 .l-body {
-  background-image: url("/assets/img/images/bg.png");
-  background-size: cover;
-  background-position: center;
+  background-color: #fffaf0;
 }
 
 .l-main {
@@ -536,7 +539,7 @@ button {
   display: inline-block;
   width: auto;
   padding: 10px 20px;
-  background-color: #20b2aa;
+  background-color: #40A2D8;
   color: #FFFFFF;
   border-radius: 30px;
   cursor: pointer;

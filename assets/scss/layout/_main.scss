@@ -1,8 +1,10 @@
-// bodyやmain周りのスタイリング
+@use "../foundation/color" as cl;
+
 .l-body {
-    background-image: url("/assets/img/images/bg.png");
-    background-size: cover;
-    background-position: center;
+    // background-image: url("/assets/img/images/bg.png");
+    // background-size: cover;
+    // background-position: center;
+    background-color: cl.$c-bg;
 }
 
 .l-main {
