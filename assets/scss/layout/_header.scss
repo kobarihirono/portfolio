@@ -1,2 +1,35 @@
 @use "../foundation/color" as cl;
 
+.l-header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 40px;
+
+    .l-header__logo {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .l-header__nav {
+        display: flex;
+        gap: 60px;
+
+        .l-header__nav-list {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .l-header__nav-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
