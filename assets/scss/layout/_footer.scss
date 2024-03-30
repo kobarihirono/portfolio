@@ -1,17 +1,2 @@
 @use "../foundation/color" as cl;
 
-.l-footer {
-    width: 100%;
-    padding: 20px;
-
-    .l-footer__inner {
-        display: flex;
-        justify-content: center;
-        border-top: 1px solid cl.$c-mainFont;
-        padding-top: 20px;
-    }
-
-    .l-footer__copy-text {
-        font-size: 14px;
-    }
-}
