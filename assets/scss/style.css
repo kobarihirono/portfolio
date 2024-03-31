@@ -526,15 +526,93 @@ button {
   padding-right: 7%;
 }
 
-.c-mainTitle .c-mainTitle__text {
-  font-size: 36px;
-  line-height: 48px;
-  font-weight: 700;
+.c-button {
+  font-size: 24px;
+  font-weight: normal;
+  color: #555555;
+  position: relative;
+}
+.c-button::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: calc(100% + 30px);
+  height: 1px;
+  background-color: #555555;
+  transition: width 0.5s ease;
+}
+.c-button:hover::after {
+  width: calc(100% + 50px);
+}
+
+.c-title {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+}
+.c-title .c-title__main {
+  font-size: 42px;
+  font-weight: bold;
+}
+.c-title .c-title__sub {
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+
+.c-productCard .c-productCard__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.c-productCard .c-productCard__img img {
+  aspect-ratio: 340/240;
+}
+.c-productCard .c-productCard__title {
+  font-size: 20px;
+  margin-top: 12px;
+}
+.c-productCard .c-productCard__skill {
+  font-size: 14px;
+  color: #6D6D6D;
 }
 
 .c-socialIcon {
-  width: 36px;
+  width: 35px;
   height: 35px;
+}
+
+.c-scrollup {
+  display: block;
+  position: absolute;
+  right: 3%;
+}
+.c-scrollup span {
+  position: absolute;
+  left: -20px;
+  bottom: 10px;
+  color: #333333;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  writing-mode: vertical-rl;
+}
+.c-scrollup::before {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  right: -4px;
+  width: 1px;
+  height: 20px;
+  background: #333333;
+  transform: skewX(23deg);
+}
+.c-scrollup::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 60px;
+  background: #333333;
 }
 
 .p-form {
@@ -544,6 +622,7 @@ button {
   padding: 36px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 36px;
+  margin-bottom: 80px;
 }
 .p-form input[type=email],
 .p-form textarea {

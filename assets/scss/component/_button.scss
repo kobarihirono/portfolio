@@ -1,1 +1,23 @@
 @use "../foundation/color" as cl;
+
+.c-button {
+    font-size: 24px;
+    font-weight: normal;
+    color: cl.$c-button;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: calc(100% + 30px);
+        height: 1px;
+        background-color: cl.$c-button;
+        transition: width 0.5s ease;
+    }
+
+    &:hover::after {
+        width: calc(100% + 50px);
+    }
+}

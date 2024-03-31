@@ -1,0 +1,22 @@
+@use "../foundation/color" as cl;
+
+.c-productCard {
+
+    .c-productCard__img {
+        object-fit: cover;
+
+        img {
+            aspect-ratio: 340 / 240;
+        }
+    }
+
+    .c-productCard__title {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    .c-productCard__skill {
+        font-size: 14px;
+        color: cl.$c-skillFont;
+    }
+}
