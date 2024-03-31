@@ -2,7 +2,6 @@
 
 .p-form {
     width: 100%;
-    background-color: cl.$c-mainBackground;
     border-radius: 10px;
     margin: 0 auto;
     padding: 36px;
@@ -14,14 +13,12 @@
         width: 100%;
         padding: 8px;
         margin-top: 5px;
-        border: 1px solid cl.$c-gray;
         border-radius: 4px;
     }
 
     .p-form__name {
         padding: 8px;
         margin-top: 5px;
-        border: 1px solid cl.$c-gray;
         border-radius: 4px;
     }
 
