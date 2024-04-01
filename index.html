@@ -21,8 +21,8 @@
       </a>
       <nav class="l-header__nav">
         <ul class="l-header__nav-list">
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">PRODUCT</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#product">PRODUCT</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
         <ul class="l-header__nav-icons">
@@ -40,25 +40,49 @@
       </nav>
     </header>
     <main class="l-main p-index">
-      <section>
+      <div class="p-sub-header">
+        <h1>
+          This is Hirono Kobari's<br />
+          Portfolio Website.
+        </h1>
+        <p>I'm a growing engineer.</p>
+        <figure>
+          <img src="/assets/img/images/blue-art.png" />
+        </figure>
+      </div>
+      <!-- .p-sub-header -->
+
+      <section id="about">
         <div class="c-title">
           <h2 class="c-title__main">ABOUT</h2>
           <p class="c-title__sub">私について</p>
         </div>
+        <h3>Better and more enjoyable.</h3>
+        <div>
+          <p>テキストテキストテキストテキスト</p>
+          <p>テキストテキストテキストテキストテキストテキスト</p>
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+        <a href="about.html"><button class="c-button">More</button></a>
       </section>
-      <section>
+
+      <section id="product">
         <div class="c-title">
           <h2 class="c-title__main">PRODUCT</h2>
           <p class="c-title__sub">制作物</p>
         </div>
         <div class="c-productCard">
-          <figure class="c-productCard__img">
+          <a href="products/corporate.html" class="c-productCard__img">
             <img src="/assets/img/images/productComming.png" />
-          </figure>
+          </a>
           <p class="c-productCard__title">プロダクト名</p>
           <p class="c-productCard__skill">HTML | CSS | Javascript</p>
         </div>
+        <!-- .c-productCard -->
       </section>
+
       <section id="contact" class="l-section p-index-contact">
         <div class="c-title">
           <h2 class="c-title__main">CONTACT</h2>
@@ -122,6 +146,7 @@
           <input type="hidden" name="code" value="utf8" />
         </form>
       </section>
+
       <a href="#" class="c-scrollup"><span>top</span></a>
     </main>
 

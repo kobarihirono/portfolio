@@ -518,12 +518,12 @@ button {
 
 .l-main {
   padding-top: 80px;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .l-section {
   margin-top: 80px;
-  padding-left: 7%;
-  padding-right: 7%;
 }
 
 .c-button {
