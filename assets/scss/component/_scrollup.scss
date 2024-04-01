@@ -1,0 +1,40 @@
+@use "../foundation/color" as cl;
+
+.c-scrollup {
+    display: block;
+    position: absolute;
+    right: 3%;
+
+    span {
+        position: absolute;
+        left: -20px;
+        bottom: 10px;
+        color: cl.$c-mainFont;
+        font-size: 0.7rem;
+        letter-spacing: 0.05em;
+        -ms-writing-mode: tb-rl;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 40px;
+        right: -4px;
+        width: 1px;
+        height: 20px;
+        background: cl.$c-mainFont;
+        transform: skewX(23deg);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 1px;
+        height: 60px;
+        background: cl.$c-mainFont;
+    }
+}
