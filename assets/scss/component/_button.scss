@@ -11,13 +11,13 @@
         position: absolute;
         bottom: 5px;
         left: 0;
-        width: calc(100% + 30px);
+        width: calc(100% + 20px);
         height: 1px;
         background-color: cl.$c-button;
         transition: width 0.5s ease;
     }
 
     &:hover::after {
-        width: calc(100% + 50px);
+        width: calc(100% + 40px);
     }
 }

@@ -27,12 +27,12 @@
         </ul>
         <ul class="l-header__nav-icons">
           <li>
-            <a href="https://github.com/kobarihirono"
+            <a href="https://github.com/kobarihirono" target="_blank"
               ><img class="c-socialIcon" src="/assets/img/icon/github.png"
             /></a>
           </li>
           <li>
-            <a href="https://qiita.com/kobari_h"
+            <a href="https://qiita.com/kobari_h" target="_blank"
               ><img class="c-socialIcon" src="/assets/img/icon/qiita.png"
             /></a>
           </li>
@@ -40,50 +40,94 @@
       </nav>
     </header>
     <main class="l-main p-index">
-      <div class="p-sub-header">
-        <h1>
+      <div class="p-index-header">
+        <h1 class="p-index-header__title">
           This is Hirono Kobari's<br />
           Portfolio Website.
         </h1>
-        <p>I'm a growing engineer.</p>
-        <figure>
+        <div class="c-typing">
+          <p class="p-index-header__sub-title c-typing-effect">
+            I'm a growing engineer.
+          </p>
+        </div>
+        <figure class="p-index-header__img">
           <img src="/assets/img/images/blue-art.png" />
         </figure>
       </div>
       <!-- .p-sub-header -->
 
-      <section id="about">
+      <section id="about" class="p-index-about">
         <div class="c-title">
           <h2 class="c-title__main">ABOUT</h2>
           <p class="c-title__sub">私について</p>
         </div>
-        <h3>Better and more enjoyable.</h3>
-        <div>
-          <p>テキストテキストテキストテキスト</p>
-          <p>テキストテキストテキストテキストテキストテキスト</p>
-          <p>
-            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          </p>
+        <h3 class="p-index-about__title">Better and more enjoyable.</h3>
+        <div class="p-index-about__text-wrap">
+          <div class="p-index-about__text">
+            <p>テキストテキストテキストテキスト</p>
+            <p>テキストテキストテキストテキストテキストテキスト</p>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+          <a href="about.html"><button class="c-button">More</button></a>
         </div>
-        <a href="about.html"><button class="c-button">More</button></a>
       </section>
 
-      <section id="product">
-        <div class="c-title">
+      <section id="product" class="p-index-product">
+        <div class="c-title p-index-product__title">
           <h2 class="c-title__main">PRODUCT</h2>
           <p class="c-title__sub">制作物</p>
         </div>
-        <div class="c-productCard">
-          <a href="products/corporate.html" class="c-productCard__img">
-            <img src="/assets/img/images/productComming.png" />
-          </a>
-          <p class="c-productCard__title">プロダクト名</p>
-          <p class="c-productCard__skill">HTML | CSS | Javascript</p>
+        <div class="p-index-product__list">
+          <div class="c-productCard">
+            <a href="products/portfolio.html" class="c-productCard__img">
+              <img src="/assets/img/images/portfolio.png" />
+            </a>
+            <p class="c-productCard__title">ポートフォリオサイト</p>
+            <p class="c-productCard__skill">
+              HTML | SCSS | Javascript | jQuery
+            </p>
+          </div>
+          <!-- .c-productCard -->
+          <div class="c-productCard">
+            <a href="products/corporate.html" class="c-productCard__img">
+              <img src="/assets/img/images/fictitious_hp.png" />
+            </a>
+            <p class="c-productCard__title">架空のコーポレートサイト</p>
+            <p class="c-productCard__skill">HTML | SCSS | jQuery</p>
+          </div>
+          <!-- .c-productCard -->
+          <div class="c-productCard">
+            <a href="products/threeJs.html" class="c-productCard__img">
+              <img src="/assets/img/images/threeJs.png" />
+            </a>
+            <p class="c-productCard__title">Three.jsで遊ぶ</p>
+            <p class="c-productCard__skill">
+              HTML | CSS | Javascript | Three.js
+            </p>
+          </div>
+          <!-- .c-productCard -->
+          <div class="c-productCard">
+            <a href="" class="c-productCard__img">
+              <img src="/assets/img/images/dummy.png" />
+            </a>
+            <p class="c-productCard__title">Read Scale</p>
+            <p class="c-productCard__skill">HTML | MUI | Next.js | Firebase</p>
+          </div>
+          <!-- .c-productCard -->
+          <div class="c-productCard">
+            <a href="products/corporate.html" class="c-productCard__img">
+              <img src="/assets/img/images/dummy.png" />
+            </a>
+            <p class="c-productCard__title">Coming soon...</p>
+            <p class="c-productCard__skill">???</p>
+          </div>
+          <!-- .c-productCard -->
         </div>
-        <!-- .c-productCard -->
       </section>
 
-      <section id="contact" class="l-section p-index-contact">
+      <section id="contact" class="p-index-contact">
         <div class="c-title">
           <h2 class="c-title__main">CONTACT</h2>
           <p class="c-title__sub">お問い合わせ</p>
@@ -91,58 +135,63 @@
         <form
           action="https://ssl.form-mailer.jp/fm/service/Forms/confirm"
           method="post"
-          class="p-form"
+          class="p-index-contact__form"
           name="form1"
           enctype="multipart/form-data"
           accept-charset="UTF-8"
         >
           <input type="hidden" name="key" value="0c1e04d5816435" />
 
-          <p>お問い合わせの際にはフォームよりご連絡ください。</p>
-          <p><span>*</span>は必須項目です</p>
+          <div class="p-index-contact__form-wrap">
+            <div class="p-index-contact__form-list">
+              <p>質問、ご要望は以下のフォームよりご連絡ください。</p>
 
-          <!-- name -->
-          <p><span>*</span>名前</p>
-          <div class="p-form__names">
-            <p>
-              <input
-                class="p-form__name"
-                name="field_7131055_sei"
-                type="text"
-                placeholder="姓"
-              />
-              <input
-                class="p-form__name"
-                name="field_7131055_mei"
-                type="text"
-                placeholder="名"
-              />
-            </p>
+              <p class="p-index-contact__form-item">名前<span>必須</span></p>
+              <div class="p-form__names">
+                <p>
+                  <input
+                    class="p-form__name"
+                    name="field_7131055_sei"
+                    type="text"
+                    placeholder="姓"
+                  />
+                  <input
+                    class="p-form__name"
+                    name="field_7131055_mei"
+                    type="text"
+                    placeholder="名"
+                  />
+                </p>
+              </div>
+              <p class="p-index-contact__form-item">
+                メールアドレス<span>必須</span>
+              </p>
+              <p>
+                <input
+                  name="field_7131056"
+                  type="email"
+                  size="30"
+                  placeholder="info@example.com"
+                />
+              </p>
+
+              <p class="p-index-contact__form-item">
+                お問い合わせ内容<span>必須</span>
+              </p>
+              <p>
+                <textarea
+                  name="field_7131065"
+                  cols="30"
+                  rows="5"
+                  placeholder="お問い合わせ内容を入力してください"
+                ></textarea>
+              </p>
+            </div>
+            <!-- .p-index-contact__form-inner -->
+
+            <button type="submit" class="c-button">Send</button>
           </div>
-          <!-- email -->
-          <p><span>*</span>メールアドレス</p>
-          <p>
-            <input
-              name="field_7131056"
-              type="email"
-              size="30"
-              placeholder="info@example.com"
-            />
-          </p>
-
-          <!-- textarea -->
-          <p><span>*</span>お問い合わせ内容</p>
-          <p>
-            <textarea
-              name="field_7131065"
-              cols="30"
-              rows="5"
-              placeholder="お問い合わせ内容を入力してください"
-            ></textarea>
-          </p>
-
-          <button type="submit" class="c-button">Send</button>
-
+          <!--  -->
           <input type="hidden" name="code" value="utf8" />
         </form>
       </section>
@@ -160,9 +209,9 @@
         </a>
         <nav class="l-footer__nav">
           <ul class="l-footer__nav-list">
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">PRODUCT</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#product">PRODUCT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -170,5 +219,8 @@
         &copy; 2024 hirono kobari. All Rights Reserved.
       </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="/assets/js/validation.js"></script>
   </body>
 </html>
