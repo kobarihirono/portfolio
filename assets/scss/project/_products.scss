@@ -1,0 +1,62 @@
+@use "../foundation/color" as cl;
+
+.p-products {
+    width: 82%;
+    margin: auto;
+    padding: 140px 0;
+
+    .p-products__header {
+        .p-products__header-img {
+            display: block;
+            width: 100%;
+            position: relative;
+            border: 1px solid cl.$c-gray;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+
+        .p-products__header-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .p-products__header-skill {
+            font-size: 24px;
+            color: cl.$c-skillFont;
+            margin-top: 12px;
+        }
+    }
+
+    .p-products__context {
+        font-size: 18px;
+        line-height: 36.8px;
+        margin-top: 20px;
+    }
+
+    .p-products__detail {
+        font-size: 16px;
+        line-height: 30.8px;
+        margin-top: 36px;
+
+        .p-products__detail-link {
+            font-weight: bold;
+            color: cl.$c-link;
+        }
+    }
+
+    .p-products__link {
+        text-decoration: underline;
+    }
+
+    .p-products__back {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 80px;
+        padding-right: 7%;
+    }
+}

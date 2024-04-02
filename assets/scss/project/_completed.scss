@@ -1,1 +1,20 @@
 @use "../foundation/color" as cl;
+
+.p-completed {
+    width: 42%;
+    margin-left: 10%;
+    padding: 160px 0;
+
+    .p-completed__text {
+        font-size: 18px;
+        line-height: 34.8px;
+        margin-top: 36px;
+    }
+
+    .p-completed__link {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 12px;
+        
+    }
+}

@@ -9,3 +9,10 @@
     padding-left: 7%;
     padding-right: 7%;
 }
+
+// コンテンツが少ない場合のレイアウト調整
+.l-completed {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+}

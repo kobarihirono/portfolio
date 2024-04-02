@@ -492,6 +492,7 @@ button {
   width: 100%;
   height: 80px;
   padding: 0 40px;
+  z-index: 1000;
 }
 .l-header .l-header__logo img {
   width: 60px;
@@ -520,6 +521,12 @@ button {
   padding-top: 80px;
   padding-left: 7%;
   padding-right: 7%;
+}
+
+.l-completed {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
 }
 
 .c-button {
@@ -561,7 +568,8 @@ button {
   font-weight: bold;
   position: relative;
   display: inline-block;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
 }
 .c-showTitle::after {
   content: "";
@@ -569,7 +577,7 @@ button {
   bottom: 12px;
   left: 0;
   width: 100%;
-  height: 15px;
+  height: 10px;
   background-color: #40A2D8;
   opacity: 0.5;
   transform: translateY(50%);
@@ -765,4 +773,71 @@ button {
 }
 .p-index-contact .p-index-contact__form .p-index-contact__form-list .p-index-contact__form-item {
   margin-top: 20px;
+}
+
+.p-completed {
+  width: 42%;
+  margin-left: 10%;
+  padding: 160px 0;
+}
+.p-completed .p-completed__text {
+  font-size: 18px;
+  line-height: 34.8px;
+  margin-top: 36px;
+}
+.p-completed .p-completed__link {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.p-products {
+  width: 82%;
+  margin: auto;
+  padding: 140px 0;
+}
+.p-products .p-products__header .p-products__header-img {
+  display: block;
+  width: 100%;
+  position: relative;
+  border: 1px solid #D9D9D9;
+}
+.p-products .p-products__header .p-products__header-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.p-products .p-products__header .p-products__header-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.p-products .p-products__header .p-products__header-skill {
+  font-size: 24px;
+  color: #6D6D6D;
+  margin-top: 12px;
+}
+.p-products .p-products__context {
+  font-size: 18px;
+  line-height: 36.8px;
+  margin-top: 20px;
+}
+.p-products .p-products__detail {
+  font-size: 16px;
+  line-height: 30.8px;
+  margin-top: 36px;
+}
+.p-products .p-products__detail .p-products__detail-link {
+  font-weight: bold;
+  color: #0B60B0;
+}
+.p-products .p-products__link {
+  text-decoration: underline;
+}
+.p-products .p-products__back {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 80px;
+  padding-right: 7%;
 }/*# sourceMappingURL=style.css.map */
