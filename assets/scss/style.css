@@ -519,6 +519,18 @@ button {
   gap: 20px;
 }
 
+@media screen and (max-width: 1023px) {
+  .l-header {
+    padding: 20px 24px;
+  }
+  .l-header .l-header__logo {
+    width: 120px;
+    height: 13px;
+  }
+  .l-header .l-header__nav {
+    display: none;
+  }
+}
 .l-body {
   background-color: #F9F9F9;
 }
@@ -535,6 +547,70 @@ button {
   min-height: 100vh;
 }
 
+.l-hamburger {
+  position: relative;
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+.l-hamburger .l-hamburger__bar {
+  display: flex;
+  width: 30px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #333333;
+  transition: all 0.5s ease;
+}
+
+.js-ham-active .l-hamburger__bar:nth-child(1) {
+  transform: translateY(7px) rotate(-45deg);
+}
+.js-ham-active .l-hamburger__bar:nth-child(2) {
+  opacity: 0;
+}
+.js-ham-active .l-hamburger__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-135deg);
+}
+
+.l-hamburger-nav {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(100%);
+  width: 100%;
+  min-height: 100vh;
+  background-color: #D9D9D9;
+  transition: transform 0.7s ease;
+  z-index: 999;
+}
+.l-hamburger-nav .l-hamburger-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.js-ham-nav-active {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 1023px) {
+  .l-hamburger {
+    display: block;
+  }
+  .l-hamburger-nav {
+    display: flex;
+  }
+  .l-hamburger-nav .l-hamburger-nav__wrap {
+    display: flex;
+  }
+}
 .c-button {
   font-size: 24px;
   font-weight: normal;
