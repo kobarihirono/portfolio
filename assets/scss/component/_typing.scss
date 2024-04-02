@@ -1,3 +1,5 @@
+@use "../foundation/color" as cl;
+
 .c-typing {
 
     .c-typing-effect {
@@ -5,7 +7,7 @@
         animation: typing 3s steps(23), effect .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
-        border-right: 1px solid;
+        border-right: 1px solid cl.$c-mainFont;
         font-family: monospace;
         font-size: 1em;
     }
