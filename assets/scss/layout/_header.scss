@@ -1,4 +1,5 @@
 @use "../foundation/color" as cl;
+@use "../foundation/mixin" as bp;
 
 .l-header {
     position: fixed;
@@ -8,6 +9,7 @@
     width: 100%;
     height: 80px;
     padding: 0 40px;
+    z-index: 1000;
 
     .l-header__logo {
         img {
@@ -30,6 +32,21 @@
             display: flex;
             align-items: center;
             gap: 20px;
+        }
+    }
+}
+
+@include mq(lg, max) {
+    .l-header {
+        padding: 20px 24px;
+
+        .l-header__logo {
+            width: 120px;
+            height: 13px;
+        }
+
+        .l-header__nav {
+            display: none;
         }
     }
 }
