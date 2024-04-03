@@ -751,6 +751,14 @@ button {
   z-index: -1;
 }
 
+@media screen and (max-width: 639px) {
+  .c-showTitle {
+    font-size: 20px;
+  }
+  .c-showTitle::after {
+    height: 8px;
+  }
+}
 .c-productCard {
   width: 100%;
 }
@@ -794,11 +802,8 @@ button {
   }
 }
 @media screen and (max-width: 639px) {
-  .c-productCard .c-productCard__title {
-    font-size: 14px;
-  }
   .c-productCard .c-productCard__skill {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .c-socialIcon {
@@ -1118,7 +1123,7 @@ button {
 }
 .p-about .p-about__career .p-about__career-timeline {
   position: relative;
-  padding-left: 60px;
+  padding: 0 60px;
   margin-top: 24px;
 }
 .p-about .p-about__career .p-about__career-timeline::before {
@@ -1141,7 +1146,6 @@ button {
   display: flex;
   justify-content: center;
   width: 100px;
-  font-weight: bold;
   position: relative;
   padding-right: 60px;
 }
@@ -1156,10 +1160,67 @@ button {
   background-color: #3A72A7;
   border-radius: 50%;
 }
-.p-about .p-about__career .p-about__career-timeline .p-about__career-timeline-list .p-about__career-timeline-list-item .p-about__timeline-list-item-text {
+.p-about .p-about__career .p-about__career-timeline .p-about__career-timeline-list .p-about__career-timeline-list-item .p-about__career-timeline-list-item-text {
   flex: 1;
+  margin-left: 12px;
 }
 
+@media screen and (max-width: 1023px) {
+  .p-about .p-about__about {
+    flex-direction: column;
+  }
+  .p-about .p-about__about .p-about__about-context {
+    width: 100%;
+    margin-left: 0;
+  }
+  .p-about .p-about__about .p-about__about-img {
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .p-about .p-about__skill .p-about__skill-inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .p-about .p-about__skill .p-about__skill-img {
+    width: 100%;
+  }
+  .p-about .p-about__skill .p-about__skill-context {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 639px) {
+  .p-about {
+    padding: 100px 0;
+  }
+  .p-about .p-about__about .p-about__about-context {
+    font-size: 14px;
+    line-height: 28.8px;
+  }
+  .p-about .p-about__skill .p-about__skill-inner {
+    margin-top: 16px;
+  }
+  .p-about .p-about__skill .p-about__skill-context {
+    font-size: 14px;
+    line-height: 28.8px;
+  }
+  .p-about .p-about__career .p-about__career-timeline {
+    padding: 0;
+  }
+  .p-about .p-about__career .p-about__career-timeline::before {
+    left: 81px;
+  }
+  .p-about .p-about__career .p-about__career-timeline .p-about__career-timeline-list .p-about__career-timeline-list-item .p-about__career-timeline-list-item-date {
+    font-size: 12px;
+    padding-right: 24px;
+  }
+  .p-about .p-about__career .p-about__career-timeline .p-about__career-timeline-list .p-about__career-timeline-list-item .p-about__career-timeline-list-item-date::before {
+    width: 8px;
+    height: 8px;
+  }
+  .p-about .p-about__career .p-about__career-timeline .p-about__career-timeline-list .p-about__career-timeline-list-item .p-about__career-timeline-list-item-text {
+    font-size: 10px;
+  }
+}
 .p-products {
   width: 82%;
   margin: auto;
@@ -1209,4 +1270,30 @@ button {
   justify-content: flex-end;
   margin-top: 80px;
   padding-right: 7%;
+}
+
+@media screen and (max-width: 639px) {
+  .p-products {
+    width: 92%;
+    padding-top: 80px;
+    padding-bottom: 56px;
+  }
+  .p-products .p-products__header .p-products__header-title {
+    font-size: 20px;
+  }
+  .p-products .p-products__header .p-products__header-skill {
+    font-size: 16px;
+  }
+  .p-products .p-products__context {
+    font-size: 14px;
+    line-height: 32.8px;
+  }
+  .p-products .p-products__detail {
+    font-size: 12px;
+    line-height: 28.8px;
+  }
+  .p-products .p-products__back {
+    padding-right: 8%;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

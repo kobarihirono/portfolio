@@ -53,12 +53,8 @@
 
 @include bp.mq(sm, max) {
     .c-productCard {
-        .c-productCard__title {
-            font-size: 14px;
-        }
-
         .c-productCard__skill {
-            font-size: 10px;
+            font-size: 12px;
         }
     }
 }
