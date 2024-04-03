@@ -41,12 +41,28 @@
         padding: 20px 24px;
 
         .l-header__logo {
-            width: 120px;
-            height: 13px;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
         }
 
         .l-header__nav {
             display: none;
+        }
+    }
+}
+
+@include mq(sm, max) {
+    .l-header {
+        height: 70px;
+
+        .l-header__logo {
+            img {
+                width: 40px;
+                height: 40px;
+            }
         }
     }
 }
