@@ -1,4 +1,5 @@
 @use "../foundation/color" as cl;
+@use "../foundation/mixin" as bp;
 
 .p-about {
     width: 92%;
@@ -70,7 +71,7 @@
 
         .p-about__career-timeline {
             position: relative;
-            padding-left: 60px;
+            padding: 0 60px;
             margin-top: 24px;
 
             &::before {
@@ -95,9 +96,8 @@
                         display: flex;
                         justify-content: center;
                         width: 100px;
-                        font-weight: bold;
                         position: relative;
-                        padding-right: 20px;
+                        padding-right: 60px;
 
                         &::before {
                             content: '';
@@ -112,8 +112,96 @@
                         }
                     }
 
-                    .p-about__timeline-list-item-text {
+                    .p-about__career-timeline-list-item-text {
                         flex: 1;
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include bp.mq(lg, max) {
+    .p-about {
+        .p-about__about {
+            flex-direction: column;
+
+            .p-about__about-context {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .p-about__about-img {
+                justify-content: center;
+                margin-top: 24px;
+            }
+        }
+
+        .p-about__skill {
+            .p-about__skill-inner {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .p-about__skill-img {
+                width: 100%;
+            }
+
+            .p-about__skill-context {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include bp.mq(sm, max) {
+    .p-about {
+        padding: 100px 0;
+
+        .p-about__about {
+
+            .p-about__about-context {
+                font-size: 14px;
+                line-height: 28.8px;
+            }
+        }
+
+        .p-about__skill {
+
+            .p-about__skill-inner {
+                margin-top: 16px;
+            }
+
+            .p-about__skill-context {
+                font-size: 14px;
+                line-height: 28.8px;
+            }
+        }
+
+        .p-about__career {
+            .p-about__career-timeline {
+                padding: 0;
+
+                &::before {
+                    left: 81px;
+                }
+
+                .p-about__career-timeline-list {
+                    .p-about__career-timeline-list-item {
+                        .p-about__career-timeline-list-item-date {
+                            font-size: 12px;
+                            padding-right: 24px;
+
+                            &::before {
+                                width: 8px;
+                                height: 8px;
+                            }
+                        }
+
+                        .p-about__career-timeline-list-item-text {
+                            font-size: 10px;
+                        }
                     }
                 }
             }

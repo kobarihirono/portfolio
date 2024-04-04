@@ -1,3 +1,6 @@
+@use "../foundation/color" as cl;
+@use "../foundation/mixin" as bp;
+
 .c-title {
     display: flex;
     align-items: end;
@@ -11,5 +14,30 @@
     .c-title__sub {
         font-size: 16px;
         padding-bottom: 12px;
+    }
+}
+
+@include bp.mq(lg, max) {
+    .c-title {
+        .c-title__main {
+            font-size: 40px;
+        }
+
+        .c-title__sub {
+            font-size: 14px;
+        }
+    }
+}
+
+@include bp.mq(sm, max) {
+    .c-title {
+        .c-title__main {
+            font-size: 28px;
+        }
+
+        .c-title__sub {
+            font-size: 12px;
+            padding-bottom: 8px;
+        }
     }
 }

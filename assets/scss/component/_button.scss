@@ -1,4 +1,5 @@
 @use "../foundation/color" as cl;
+@use "../foundation/mixin" as bp;
 
 .c-button {
     font-size: 24px;
@@ -19,5 +20,15 @@
 
     &:hover::after {
         width: calc(100% + 40px);
+    }
+}
+
+@include bp.mq(sm, max) {
+    .c-button {
+        font-size: 20px;
+
+        &::after {
+            bottom: 3px;
+        }
     }
 }

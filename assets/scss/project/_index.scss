@@ -20,6 +20,7 @@
         display: flex;
         justify-content: end;
         object-fit: cover;
+        margin-top: 24px;
 
         img {
             width: 72%;
@@ -59,9 +60,6 @@
 
     .p-index-product__list {
         margin-top: 54px;
-    }
-
-    .p-index-product__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
@@ -73,7 +71,6 @@
     margin: 100px 0;
 
     .p-index-contact__form {
-
         input[type="email"],
         textarea {
             width: 100%;
@@ -109,6 +106,122 @@
             .p-index-contact__form-item {
                 margin-top: 20px;
             }
+        }
+    }
+}
+
+@include bp.mq(lg, max) {
+    .p-index-header {
+        .p-index-header__title {
+            font-size: 48px;
+        }
+
+        .p-index-header__sub-title {
+            font-size: 16px;
+        }
+
+        .p-index-header__img {
+            img {
+                width: 82%;
+            }
+        }
+    }
+
+    .p-index-about {
+        .p-index-about__title {
+            font-size: 42px;
+        }
+    }
+
+    .p-index-product {
+        .p-index-product__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .p-index-contact {
+        .p-index-contact__form {
+            .p-index-contact__form-list {
+                width: 78%;
+            }
+        }
+    }
+}
+
+@include bp.mq(sm, max) {
+    .p-index-header {
+        .p-index-header__title {
+            font-size: 28px;
+            margin-left: 5%;
+        }
+
+        .p-index-header__sub-title {
+            font-size: 14px;
+            margin-left: 5%;
+        }
+
+        .p-index-header__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .p-index-about {
+        .p-index-about__title {
+            font-size: 28px;
+        }
+
+        .p-index-about__text {
+            font-size: 14px;
+        }
+
+        .p-index-about__text-wrap {
+            display: block;
+        }
+
+        a {
+            display: block;
+            margin-top: 12px;
+        }
+    }
+
+    .p-index-product {
+        margin-top: 74px;
+
+        .p-index-product__list {
+            grid-template-columns: 1fr;
+            margin-top: 36px;
+        }
+    }
+
+    .p-index-contact {
+        margin-top: 74px;
+
+        .p-index-contact__form {
+            span {
+                font-size: 10px;
+            }
+
+            .p-index-contact__form-list {
+                width: 100%;
+            }
+
+            .p-form__name {
+                width: 50%;
+            }
+
+            .p-index-contact__form-wrap {
+                display: block;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 12px;
         }
     }
 }
