@@ -1,4 +1,5 @@
 @use "../foundation/color" as cl;
+@use "../foundation/mixin" as bp;
 
 .p-completed {
     width: 42%;
@@ -17,4 +18,40 @@
         margin-top: 12px;
         
     }
+}
+
+@include bp.mq(lg, max) {
+    .p-completed {
+        width: 64%;
+        margin-left: 7%;
+        padding: 120px 0;
+
+        .p-completed__text {
+            font-size: 14px;
+            line-height: 28.8px;
+            margin-top: 24px;
+        }
+
+        .p-completed__link {
+            margin-top: 12px;
+        }
+    }
+}
+
+@include bp.mq(sm, max) {
+    .p-completed {
+        width: 77%;
+        padding: 112px 3%;
+
+        .p-completed__text {
+            font-size: 12px;
+            line-height: 24.8px;
+            margin-top: 16px;
+        }
+
+        .p-completed__link {
+            display: block;
+            margin-top: 12px;
+        }
+    }   
 }

@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" href="" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/assets/img/logo/logo.png" sizes="192x192" />
     <link rel="stylesheet" href="/assets/scss/style.css" />
     <title>My Portfolio</title>
   </head>
@@ -21,23 +21,40 @@
       </a>
       <nav class="l-header__nav">
         <ul class="l-header__nav-list">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#product">PRODUCT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="index.htmlindex.html#about">ABOUT</a></li>
+          <li><a href="index.htmlindex.html#product">PRODUCT</a></li>
+          <li><a href="index.htmlindex.html#contact">CONTACT</a></li>
         </ul>
         <ul class="l-header__nav-icons">
           <li>
-            <a href="https://github.com/kobarihirono"
+            <a href="https://github.com/kobarihirono" target="_blank"
               ><img class="c-socialIcon" src="/assets/img/icon/github.png"
             /></a>
           </li>
           <li>
-            <a href="https://qiita.com/kobari_h"
+            <a href="https://qiita.com/kobari_h" target="_blank"
               ><img class="c-socialIcon" src="/assets/img/icon/qiita.png"
             /></a>
           </li>
         </ul>
       </nav>
+
+      <div class="l-hamburger" id="js-hamburger">
+        <div class="l-hamburger__bar"></div>
+        <div class="l-hamburger__bar"></div>
+        <div class="l-hamburger__bar"></div>
+      </div>
+      <!-- .l-hamburger -->
+      <div class="l-hamburger-nav" id="js-hamburgerNav">
+        <nav class="l-header__nav l-hamburger-nav__wrap">
+          <ul class="l-header__nav-list l-hamburger-nav__list">
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#product">PRODUCT</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- .l-hamburger-nav -->
     </header>
     <main class="p-completed">
       <div class="c-title">
@@ -51,7 +68,7 @@
       </div>
       <a href="/" class="p-completed__link"><button class="c-button">Back</button></a>
     </main>
-    <footer class="l-footer p-completed__footer">
+    <footer class="l-footer">
       <div class="l-footer__inner">
         <a href="/" class="l-footer__logo">
           <figure>
@@ -61,9 +78,21 @@
         </a>
         <nav class="l-footer__nav">
           <ul class="l-footer__nav-list">
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">PRODUCT</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.htmlindex.htmlindex.html#product">PRODUCT</a></li>
+            <li><a href="index.htmlindex.htmlindex.html#contact">CONTACT</a></li>
+          </ul>
+          <ul class="l-footer__nav-icons">
+            <li>
+              <a href="https://github.com/kobarihirono" target="_blank"
+                ><img class="c-socialIcon" src="/assets/img/icon/github.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://qiita.com/kobari_h" target="_blank"
+                ><img class="c-socialIcon" src="/assets/img/icon/qiita.png"
+              /></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -71,5 +100,7 @@
         &copy; 2024 hirono kobari. All Rights Reserved.
       </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/assets/js/hambuger.js"></script>
   </body>
 </html>
