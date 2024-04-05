@@ -4,6 +4,8 @@
 
 ## My Portfolio
 
+自己紹介と制作物をまとめたポートフォリオサイトです。
+
 ## 使用技術
 
 このプロジェクトでは以下の技術を使用しています
@@ -63,5 +65,8 @@ scss/
 
 ### テスト仕様書
 
+https://docs.google.com/spreadsheets/d/1Fs4dcvLiqP1z0Hme4dLRT--hFokvcf04HhekcExsjgA/edit?usp=sharing
+
 ## デザイン
+
 https://www.figma.com/file/gdlPUcr0R01xY08K3X59Ad/Portfolio-Website?type=design&node-id=0%3A1&mode=design&t=QihwHNxH6WXFc0mE-1

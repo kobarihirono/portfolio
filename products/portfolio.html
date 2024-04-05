@@ -10,7 +10,12 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" href="" sizes="192x192" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/logo/logo.png"
+      sizes="192x192"
+    />
     <link rel="stylesheet" href="/assets/scss/style.css" />
     <title>My Portfolio</title>
   </head>
@@ -21,9 +26,9 @@
       </a>
       <nav class="l-header__nav">
         <ul class="l-header__nav-list">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#product">PRODUCT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="/index.html#about">ABOUT</a></li>
+          <li><a href="/index.html#product">PRODUCT</a></li>
+          <li><a href="/index.html#contact">CONTACT</a></li>
         </ul>
         <ul class="l-header__nav-icons">
           <li>
@@ -38,6 +43,22 @@
           </li>
         </ul>
       </nav>
+      <div class="l-hamburger" id="js-hamburger">
+        <div class="l-hamburger__bar"></div>
+        <div class="l-hamburger__bar"></div>
+        <div class="l-hamburger__bar"></div>
+      </div>
+      <!-- .l-hamburger -->
+      <div class="l-hamburger-nav" id="js-hamburgerNav">
+        <nav class="l-header__nav l-hamburger-nav__wrap">
+          <ul class="l-header__nav-list l-hamburger-nav__list">
+            <li><a href="/index.html#about">ABOUT</a></li>
+            <li><a href="/index.html#product">PRODUCT</a></li>
+            <li><a href="/index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- .l-hamburger-nav -->
     </header>
     <main class="p-products">
       <div class="p-products__header">
@@ -61,7 +82,11 @@
 
       <div class="p-products__detail">
         <h2 class="c-showTitle">概要</h2>
-        <p>テキストテキストテキストテキストテキストテキスト</p>
+        <p>
+          自己紹介と制作物をまとめたWebサイトが欲しいと思い、制作を行いました。
+          アニメーションやデザインはシンプルなものにし、改修やデザイン変更に柔軟に対応できるように実装しています。<br />
+          またデザインも1から作成し、figmaを使用してデザインカンプを作成しました。
+        </p>
         <p>
           <a class="p-products__detail-link" href="/" target="_blank">こちら</a
           >から実際の制作物を確認できます。
@@ -106,15 +131,6 @@
       </div>
       <!-- .p-products__detail -->
 
-      <div class="p-products__detail">
-        <h2 class="c-showTitle">振り返り</h2>
-        <p>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキスト
-        </p>
-      </div>
-      <!-- .p-products__detail -->
-
       <a href="/" class="p-products__back"
         ><button class="c-button">Back</button></a
       >
@@ -129,9 +145,25 @@
         </a>
         <nav class="l-footer__nav">
           <ul class="l-footer__nav-list">
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">PRODUCT</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="/index.html#about">ABOUT</a></li>
+            <li>
+              <a href="/index.htmlindex.htmlindex.html#product">PRODUCT</a>
+            </li>
+            <li>
+              <a href="/index.htmlindex.htmlindex.html#contact">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="l-footer__nav-icons">
+            <li>
+              <a href="https://github.com/kobarihirono" target="_blank"
+                ><img class="c-socialIcon" src="/assets/img/icon/github.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://qiita.com/kobari_h" target="_blank"
+                ><img class="c-socialIcon" src="/assets/img/icon/qiita.png"
+              /></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -139,5 +171,7 @@
         &copy; 2024 hirono kobari. All Rights Reserved.
       </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/assets/js/hambuger.js"></script>
   </body>
 </html>

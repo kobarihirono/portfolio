@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/logo/logo.png"
+      sizes="192x192"
+    />
+    <link rel="stylesheet" href="/assets/scss/style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body class="l-body">
+    <header class="l-header">
+      <a href="/" class="l-header__logo">
+        <img src="/assets/img/logo/logo.png" />
+      </a>
+      <nav class="l-header__nav">
+        <ul class="l-header__nav-list">
+          <li><a href="/index.html#about">ABOUT</a></li>
+          <li><a href="/index.html#product">PRODUCT</a></li>
+          <li><a href="/index.html#contact">CONTACT</a></li>
+        </ul>
+        <ul class="l-header__nav-icons">
+          <li>
+            <a href="https://github.com/kobarihirono"
+              ><img class="c-socialIcon" src="/assets/img/icon/github.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://qiita.com/kobari_h"
+              ><img class="c-socialIcon" src="/assets/img/icon/qiita.png"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="l-hamburger" id="js-hamburger">
+        <div class="l-hamburger__bar"></div>
+        <div class="l-hamburger__bar"></div>
+        <div class="l-hamburger__bar"></div>
+      </div>
+      <!-- .l-hamburger -->
+      <div class="l-hamburger-nav" id="js-hamburgerNav">
+        <nav class="l-header__nav l-hamburger-nav__wrap">
+          <ul class="l-header__nav-list l-hamburger-nav__list">
+            <li><a href="/index.html#about">ABOUT</a></li>
+            <li><a href="/index.html#product">PRODUCT</a></li>
+            <li><a href="/index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- .l-hamburger-nav -->
+    </header>
+    <main class="p-products">
+      <div class="p-products__header">
+        <figure class="p-products__header-img">
+          <img src="/assets/img/images/dummy.png" />
+        </figure>
+        <p class="p-products__header-title">Read Scale</p>
+        <p class="p-products__header-skill">
+          HTML | Tailwind CSS | Next.js | Firebase
+        </p>
+      </div>
+      <!-- .p-products__header -->
+
+      <div class="p-products__context">
+        <ul>
+          <li>内容：読書管理アプリ - Read Scale</li>
+          <li>制作期間：2ヶ月想定</li>
+        </ul>
+      </div>
+      <!-- .p-products__context -->
+
+      <div class="p-products__detail">
+        <h2 class="c-showTitle">概要</h2>
+        <p>
+          読書管理アプリ「Read Scale」は、読書の記録を残し、積み上げた本の高さをスケールで表現するサービスです。
+          アプリデザインから作成し、figmaを使用してデザインカンプを作成しました。
+        </p>
+        <!-- <p>
+          <a class="p-products__detail-link" href="/" target="_blank">こちら</a
+          >から実際の制作物を確認できます。
+        </p> -->
+      </div>
+      <!-- .p-products__detail -->
+
+      <div class="p-products__detail">
+        <h2 class="c-showTitle">コード</h2>
+        <p>
+          Git hubリポジトリは<a
+            class="p-products__detail-link"
+            href="https://github.com/kobarihirono/ReadScale"
+            target="_blank"
+            >こちら</a
+          >から確認できます。
+        </p>
+      </div>
+      <!-- .p-products__detail -->
+
+      <div class="p-products__detail">
+        <h2 class="c-showTitle">デザイン</h2>
+        <p>
+          figmaデザインは<a
+            class="p-products__detail-link"
+            href="https://www.figma.com/file/I03ssWJsITenc7cu3pzURF/Read-Scale?type=design&node-id=0%3A1&mode=design&t=sMSz2bBXXwXZOMCK-1"
+            target="_blank"
+            >こちら</a
+          >から確認できます。
+        </p>
+      </div>
+      <!-- .p-products__detail -->
+
+      <div class="p-products__detail">
+        <h2 class="c-showTitle">使用技術</h2>
+        <ul>
+          <li>使用言語：HTML | CSS | Javascript</li>
+          <li>ライブラリ：Tailwind CSS | React</li>
+          <li>フレームワーク：Next.js</li>
+          <li>外部API：Google Book API</li>
+          <li>DB：Firestore</li>
+          <li>認証：Firebase Authentication</li>
+          <li>テスト：Jest | React Testing Library</li>
+          <li>デザインツール：figma</li>
+          <li>ホスティング：Vercel</li>
+        </ul>
+      </div>
+      <!-- .p-products__detail -->
+
+      <a href="/" class="p-products__back"
+        ><button class="c-button">Back</button></a
+      >
+    </main>
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <a href="/" class="l-footer__logo">
+          <figure>
+            <img src="/assets/img/logo/logo.png" />
+          </figure>
+          <p>Hirono Kobari Portfolio</p>
+        </a>
+        <nav class="l-footer__nav">
+          <ul class="l-footer__nav-list">
+            <li><a href="/index.html#about">ABOUT</a></li>
+            <li>
+              <a href="/index.htmlindex.htmlindex.html#product">PRODUCT</a>
+            </li>
+            <li>
+              <a href="/index.htmlindex.htmlindex.html#contact">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="l-footer__nav-icons">
+            <li>
+              <a href="https://github.com/kobarihirono" target="_blank"
+                ><img class="c-socialIcon" src="/assets/img/icon/github.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://qiita.com/kobari_h" target="_blank"
+                ><img class="c-socialIcon" src="/assets/img/icon/qiita.png"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="l-footer__copy">
+        &copy; 2024 hirono kobari. All Rights Reserved.
+      </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/assets/js/hambuger.js"></script>
+  </body>
+</html>

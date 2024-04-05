@@ -1066,6 +1066,36 @@ button {
   margin-top: 12px;
 }
 
+@media screen and (max-width: 1023px) {
+  .p-completed {
+    width: 64%;
+    margin-left: 7%;
+    padding: 120px 0;
+  }
+  .p-completed .p-completed__text {
+    font-size: 14px;
+    line-height: 28.8px;
+    margin-top: 24px;
+  }
+  .p-completed .p-completed__link {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .p-completed {
+    width: 77%;
+    padding: 112px 3%;
+  }
+  .p-completed .p-completed__text {
+    font-size: 12px;
+    line-height: 24.8px;
+    margin-top: 16px;
+  }
+  .p-completed .p-completed__link {
+    display: block;
+    margin-top: 12px;
+  }
+}
 .p-about {
   width: 92%;
   margin: auto;
@@ -1211,7 +1241,7 @@ button {
   }
   .p-about .p-about__career .p-about__career-timeline .p-about__career-timeline-list .p-about__career-timeline-list-item .p-about__career-timeline-list-item-date {
     font-size: 12px;
-    padding-right: 24px;
+    padding-right: 40px;
   }
   .p-about .p-about__career .p-about__career-timeline .p-about__career-timeline-list .p-about__career-timeline-list-item .p-about__career-timeline-list-item-date::before {
     width: 8px;
