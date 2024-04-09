@@ -793,7 +793,7 @@ button {
   margin-top: 12px;
 }
 .c-productCard .c-productCard__skill {
-  font-size: 14px;
+  font-size: 18px;
   color: #6D6D6D;
 }
 
@@ -804,7 +804,7 @@ button {
 }
 @media screen and (max-width: 639px) {
   .c-productCard .c-productCard__skill {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 .c-socialIcon {
