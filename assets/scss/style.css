@@ -872,6 +872,7 @@ button {
   border-right: 1px solid #333333;
   font-family: monospace;
   font-size: 1em;
+  transform: translateZ(0);
 }
 
 @keyframes typing {
