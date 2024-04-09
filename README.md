@@ -2,11 +2,13 @@
 
 ポートフォリオサイト制作
 
-## My Portfolio
+## URL
 
 自己紹介と制作物をまとめたポートフォリオサイトです。
-以下URLより実際の挙動を確認できます。
+以下 URL より実際の挙動を確認できます。
 https://portfolio-pi-nine-98.vercel.app/
+
+## My Portfolio
 
 ## 使用技術
 
@@ -17,6 +19,10 @@ https://portfolio-pi-nine-98.vercel.app/
   - HTML
   - SCSS
   - Javascript
+
+- **フレームワーク**
+
+  - jQuery
 
 - **デザインツール**
 
