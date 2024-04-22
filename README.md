@@ -2,16 +2,14 @@
 
 ポートフォリオサイト制作
 
-## URL
-
-自己紹介と制作物をまとめたポートフォリオサイトです。
-以下 URL より実際の挙動を確認できます。
-https://portfolio-pi-nine-98.vercel.app/
-
 ## My Portfolio
 https://github.com/kobarihirono/portfolio/assets/131847306/24dffe6e-b142-4c40-9527-95cbf799a157
 
 https://github.com/kobarihirono/portfolio/assets/131847306/b67f1e2c-d68a-4e22-b0f6-cada6683b8d1
+
+自己紹介と制作物をまとめたポートフォリオサイトです。  
+以下 URL より実際の挙動を確認できます。  
+https://portfolio-pi-nine-98.vercel.app/
 
 ## 使用技術
 
@@ -78,6 +76,6 @@ scss/
 
 https://docs.google.com/spreadsheets/d/1Fs4dcvLiqP1z0Hme4dLRT--hFokvcf04HhekcExsjgA/edit?usp=sharing
 
-## デザイン
+## デザイン / 画面遷移図
 
 https://www.figma.com/file/gdlPUcr0R01xY08K3X59Ad/Portfolio-Website?type=design&node-id=0%3A1&mode=design&t=QihwHNxH6WXFc0mE-1
