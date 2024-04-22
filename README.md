@@ -4,8 +4,8 @@
 
 ## URL
 
-自己紹介と制作物をまとめたポートフォリオサイトです。
-以下 URL より実際の挙動を確認できます。
+自己紹介と制作物をまとめたポートフォリオサイトです。  
+以下 URL より実際の挙動を確認できます。  
 https://portfolio-pi-nine-98.vercel.app/
 
 ## My Portfolio
@@ -75,6 +75,6 @@ scss/
 
 https://docs.google.com/spreadsheets/d/1Fs4dcvLiqP1z0Hme4dLRT--hFokvcf04HhekcExsjgA/edit?usp=sharing
 
-## デザイン
+## デザイン / 画面遷移図
 
 https://www.figma.com/file/gdlPUcr0R01xY08K3X59Ad/Portfolio-Website?type=design&node-id=0%3A1&mode=design&t=QihwHNxH6WXFc0mE-1
