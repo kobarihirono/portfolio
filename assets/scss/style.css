@@ -1294,6 +1294,15 @@ button {
   line-height: 30.8px;
   margin-top: 36px;
 }
+.p-products .p-products__detail .p-products__detail-login {
+  margin-top: 18px;
+  border: 5px solid #D9D9D9;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.p-products .p-products__detail .p-products__detail-login .p-products__detail-login-text {
+  font-weight: bold;
+}
 .p-products .p-products__detail .p-products__detail-link {
   font-weight: bold;
   color: #0B60B0;

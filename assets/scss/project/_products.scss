@@ -44,6 +44,17 @@
         line-height: 30.8px;
         margin-top: 36px;
 
+        .p-products__detail-login {
+            margin-top: 18px;
+            border: 5px solid cl.$c-gray;
+            padding: 10px 20px;
+            border-radius: 10px;
+
+            .p-products__detail-login-text {
+                font-weight: bold;
+            }
+        }
+
         .p-products__detail-link {
             font-weight: bold;
             color: cl.$c-link;
