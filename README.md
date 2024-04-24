@@ -3,13 +3,13 @@
 ポートフォリオサイト制作
 
 ## My Portfolio
-https://github.com/kobarihirono/portfolio/assets/131847306/24dffe6e-b142-4c40-9527-95cbf799a157
-
-https://github.com/kobarihirono/portfolio/assets/131847306/b67f1e2c-d68a-4e22-b0f6-cada6683b8d1
-
 自己紹介と制作物をまとめたポートフォリオサイトです。  
 以下 URL より実際の挙動を確認できます。  
 https://portfolio-pi-nine-98.vercel.app/
+
+https://github.com/kobarihirono/portfolio/assets/131847306/24dffe6e-b142-4c40-9527-95cbf799a157
+
+https://github.com/kobarihirono/portfolio/assets/131847306/b67f1e2c-d68a-4e22-b0f6-cada6683b8d1
 
 ## 使用技術
 
